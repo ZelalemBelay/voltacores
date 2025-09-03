@@ -130,10 +130,11 @@ export default function App() {
           <div className="flex items-center space-x-3">
             {/* Logo size increased by stretching width from w-14 to w-16 */}
             <VoltacoresLogo className="w-16 h-14" /> {/* Use the new logo component */}
-            <span className="text-4xl font-extrabold tracking-tight text-white relative">
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#FFD700] to-[#DAA520] transform -translate-x-1 -translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-300">VOLTACORES</span>
-              <span className="absolute inset-0 text-transparent bg-clip-text bg-gradient-to-r from-[#FFD700] to-[#DAA520] opacity-70 blur-sm transform translate-x-1 translate-y-1">VOLTACORES <span className="text-white text-[80%] ml-0.5">.com</span></span>
-            </span>
+                <span className="text-4xl font-extrabold tracking-tight text-white relative">
+                  <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#FFD700] to-[#DAA520] transform -translate-x-1 -translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-300">VOLTACORES</span>
+                  <span className="text-white text-[80%] ml-0.5">.com</span>
+                  <span className="absolute inset-0 text-transparent bg-clip-text bg-gradient-to-r from-[#FFD700] to-[#DAA520] opacity-70 blur-sm transform translate-x-1 translate-y-1">VOLTACORES</span>
+                </span>
           </div>
           <nav className="flex space-x-8">
             <a href="#home" className="text-lg font-medium text-gray-300 hover:text-[#FFD700] relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-[#FFD700] before:transition-all before:duration-300 hover:before:w-full">Home</a>
