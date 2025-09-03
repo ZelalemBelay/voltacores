@@ -133,6 +133,7 @@ export default function App() {
             <span className="text-4xl font-extrabold tracking-tight text-white relative">
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#FFD700] to-[#DAA520] transform -translate-x-1 -translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-300">VOLTACORES</span>
               <span className="absolute inset-0 text-transparent bg-clip-text bg-gradient-to-r from-[#FFD700] to-[#DAA520] opacity-70 blur-sm transform translate-x-1 translate-y-1">VOLTACORES</span>
+              <span className="text-white text-[80%] ml-0.5">.com</span>
             </span>
           </div>
           <nav className="flex space-x-8">
