@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Info, Image, Send } from 'lucide-react';
+import { Mail, Info, Image, Send, Home } from 'lucide-react';
 
 // VoltacoresLogo component is now defined directly within App.jsx
 const VoltacoresLogo = ({ className }) => (
@@ -130,17 +130,29 @@ export default function App() {
           <div className="flex items-center space-x-3">
             {/* Logo size increased by stretching width from w-14 to w-16 */}
             <VoltacoresLogo className="w-16 h-14" /> {/* Use the new logo component */}
-                <span className="text-4xl font-extrabold tracking-tight text-white relative">
-                  <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#FFD700] to-[#DAA520] transform -translate-x-1 -translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-300">VOLTACORES</span>
-                  <span className="text-white text-[80%] ml-0.5">.com</span>
-                  <span className="absolute inset-0 text-transparent bg-clip-text bg-gradient-to-r from-[#FFD700] to-[#DAA520] opacity-70 blur-sm transform translate-x-1 translate-y-1">VOLTACORES</span>
-                </span>
+              <span className="text-4xl font-extrabold tracking-tight text-white relative">
+                <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#FFD700] to-[#DAA520] transform -translate-x-1 -translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-300">VOLTACORES</span>
+                <span className="text-white text-[80%] ml-0.5">.com</span>
+                <span className="absolute inset-0 text-transparent bg-clip-text bg-gradient-to-r from-[#FFD700] to-[#DAA520] opacity-70 blur-sm transform translate-x-1 translate-y-1">VOLTACORES</span>
+              </span>
           </div>
           <nav className="flex space-x-8">
-            <a href="#home" className="text-lg font-medium text-gray-300 hover:text-[#FFD700] relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-[#FFD700] before:transition-all before:duration-300 hover:before:w-full">Home</a>
-            <a href="#about" className="text-lg font-medium text-gray-300 hover:text-[#FFD700] relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-[#FFD700] before:transition-all before:duration-300 hover:before:w-full">About Us</a>
-            <a href="#gallery" className="text-lg font-medium text-gray-300 hover:text-[#FFD700] relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-[#FFD700] before:transition-all before:duration-300 hover:before:w-full">Gallery</a>
-            <a href="#contact" className="text-lg font-medium text-gray-300 hover:text-[#FFD700] relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-[#FFD700] before:transition-all before:duration-300 hover:before:w-full">Contact Us</a>
+            <a href="#home" className="text-lg font-medium text-gray-300 hover:text-[#FFD700] relative flex items-center before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-[#FFD700] before:transition-all before:duration-300 hover:before:w-full">
+              <svg className="w-16 h-7 mr-1 text-gray-300 group-hover:text-[#FFD700] transition-colors duration-300" viewBox="0 0 50 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 15L25 1L49 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M7 14V28H43V14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <text x="25" y="21" fontFamily="sans-serif" fontSize="10" textAnchor="middle" fill="currentColor">Home</text>
+              </svg>
+            </a>
+            <a href="#about" className="text-lg font-medium text-gray-300 hover:text-[#FFD700] relative flex items-center before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-[#FFD700] before:transition-all before:duration-300 hover:before:w-full">
+              <Info className="w-5 h-5 mr-1" />About Us
+            </a>
+            <a href="#gallery" className="text-lg font-medium text-gray-300 hover:text-[#FFD700] relative flex items-center before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-[#FFD700] before:transition-all before:duration-300 hover:before:w-full">
+              <Image className="w-5 h-5 mr-1" />Gallery
+            </a>
+            <a href="#contact" className="text-lg font-medium text-gray-300 hover:text-[#FFD700] relative flex items-center before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-[#FFD700] before:transition-all before:duration-300 hover:before:w-full">
+              <Mail className="w-5 h-5 mr-1" />Contact Us
+            </a>
           </nav>
         </div>
       </header>
