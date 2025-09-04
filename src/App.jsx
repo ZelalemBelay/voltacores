@@ -87,7 +87,7 @@ export default function App() {
 
     setSubmissionStatus('sending'); // Set status to indicate sending
 
-    const apiUrl = 'https://advertisements-cooling-retail-roll.trycloudflare.com/mailApi';
+    const apiUrl = 'https://home.zeelo.me/mailApi';
     const formData = {
       name: name,
       email: email,
