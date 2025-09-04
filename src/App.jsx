@@ -87,7 +87,7 @@ export default function App() {
 
     setSubmissionStatus('sending'); // Set status to indicate sending
 
-    const apiUrl = 'https://home.zeelo.me/mailApi';
+    const apiUrl = 'https://api.zeelo.me/mailApi';
     const formData = {
       name: name,
       email: email,
